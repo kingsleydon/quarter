@@ -5,7 +5,6 @@ const webpackConfig = require('./webpack.config')
 
 module.exports = withCss(
   withSass({
-    target: 'serverless',
     webpack: config => {
       // add polyfill
       const originalEntry = config.entry
