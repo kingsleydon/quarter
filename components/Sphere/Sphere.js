@@ -1,40 +1,11 @@
-import React, {useState, useEffect} from 'react'
-import isNumber from 'lodash/isNumber'
+import React from 'react'
 import './Sphere.scss'
 
 export default function Sphere() {
-  const [alpha, setAlpha] = useState(0)
-  const [beta, setBeta] = useState(60)
-
-  const handleRotate = ({alpha, beta, gamma}) => {
-    if ([alpha, beta, gamma].every(isNumber)) {
-      setAlpha(alpha)
-      setBeta(beta)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('deviceorientation', handleRotate)
-    return () => {
-      window.removeEventListener('deviceorientation', handleRotate)
-    }
-  })
-
   return (
     <div className="Sphere">
-      <img
-        src="/static/title.png"
-        className="Sphere-titleImage"
-        style={{
-          transform: `rotateX(${beta / 7}deg) rotateY(${alpha / 7}deg)`,
-        }}
-      />
-      <div
-        className="Sphere-rings"
-        style={{
-          transform: `rotateX(${60 + beta}deg) rotateY(${alpha + 60}deg)`,
-        }}
-      >
+      <img src="/static/title.png" className="Sphere-titleImage" />
+      <div className="Sphere-rings">
         {Array(16)
           .fill()
           .map((_, index) => (
