@@ -6,13 +6,11 @@ import './Sphere.scss'
 export default function Sphere() {
   const [alpha, setAlpha] = useState(0)
   const [beta, setBeta] = useState(60)
-  // const [gamma, setGamma] = useState(0)
 
   const handleRotate = throttle(({alpha, beta, gamma}) => {
     if ([alpha, beta, gamma].every(isNumber)) {
       setAlpha(alpha)
       setBeta(beta)
-      // setGamma(gamma)
     }
   }, 16)
 
