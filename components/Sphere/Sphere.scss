@@ -10,9 +10,13 @@ $colors: #05c2de #09bede #12b6dd #19afdc #24a4db #3892da #4286d9 #4e7cd9 #5b6ed8
   #6169d8 #705ad6 #7952d6 #8348d5 #8e3ed4 #9536d3 #9a32d4;
 
 .Sphere {
-  position: relative;
+  position: fixed;
   width: $r * 2;
   height: $r * 2;
+  top: 50%;
+  left: 50%;
+  margin-top: -$r;
+  margin-left: -$r;
 
   &-titleImage {
     display: block;

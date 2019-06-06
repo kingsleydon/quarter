@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import throttle from 'lodash/throttle'
 import isNumber from 'lodash/isNumber'
 import './Sphere.scss'
 
@@ -7,12 +6,12 @@ export default function Sphere() {
   const [alpha, setAlpha] = useState(0)
   const [beta, setBeta] = useState(60)
 
-  const handleRotate = throttle(({alpha, beta, gamma}) => {
+  const handleRotate = ({alpha, beta, gamma}) => {
     if ([alpha, beta, gamma].every(isNumber)) {
       setAlpha(alpha)
       setBeta(beta)
     }
-  }, 16)
+  }
 
   useEffect(() => {
     window.addEventListener('deviceorientation', handleRotate)
@@ -27,7 +26,7 @@ export default function Sphere() {
         src="/static/title.png"
         className="Sphere-titleImage"
         style={{
-          transform: `rotateX(${beta / 7}deg) rotateY(${-alpha / 7}deg)`,
+          transform: `rotateX(${beta / 7}deg) rotateY(${alpha / 7}deg)`,
         }}
       />
       <div
