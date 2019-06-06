@@ -29,7 +29,7 @@ export default function Sphere() {
         src="/static/title.png"
         className="Sphere-titleImage"
         style={{
-          transform: `rotateX(${beta / 7}deg) rotateY(${alpha / 7}deg)`,
+          transform: `rotateX(${beta / 7}deg) rotateY(${-alpha / 7}deg)`,
         }}
       />
       <div
