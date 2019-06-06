@@ -1,24 +1,27 @@
 const withCss = require('@zeit/next-css')
+const withSass = require('@zeit/next-sass')
 const merge = require('webpack-merge')
 const webpackConfig = require('./webpack.config')
 
-module.exports = withCss({
-  webpack: config => {
-    // add polyfill
-    const originalEntry = config.entry
-    config.entry = async () => {
-      const entries = await originalEntry()
+module.exports = withCss(
+  withSass({
+    webpack: config => {
+      // add polyfill
+      const originalEntry = config.entry
+      config.entry = async () => {
+        const entries = await originalEntry()
 
-      if (
-        entries['main.js'] &&
-        !entries['main.js'].includes('./polyfills.js')
-      ) {
-        entries['main.js'].unshift('./polyfills.js')
+        if (
+          entries['main.js'] &&
+          !entries['main.js'].includes('./polyfills.js')
+        ) {
+          entries['main.js'].unshift('./polyfills.js')
+        }
+
+        return entries
       }
 
-      return entries
-    }
-
-    return merge(config, webpackConfig)
-  },
-})
+      return merge(config, webpackConfig)
+    },
+  })
+)

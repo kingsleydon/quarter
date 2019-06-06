@@ -1,8 +1,11 @@
-import React, {Component} from 'react'
-import './index.css'
+import React from 'react'
+import Sphere from '../components/Sphere'
+import './index.sass'
 
-export default class App extends Component {
-  render() {
-    return <div className="App">{}</div>
-  }
+export default function App() {
+  return (
+    <div className="App">
+      <Sphere />
+    </div>
+  )
 }

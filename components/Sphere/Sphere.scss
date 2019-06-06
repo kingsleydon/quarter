@@ -1,0 +1,87 @@
+// SEE: https://codepen.io/lukerichardville/pen/zjqfl
+
+@import '../../styles/mixins';
+
+$n: 16;
+$r: 60vw;
+$t: 5s;
+$ba: 180deg / $n;
+$colors: #05c2de #09bede #12b6dd #19afdc #24a4db #3892da #4286d9 #4e7cd9 #5b6ed8
+  #6169d8 #705ad6 #7952d6 #8348d5 #8e3ed4 #9536d3 #9a32d4;
+
+.Sphere {
+  position: relative;
+  width: $r * 2;
+  height: $r * 2;
+
+  &-titleImage {
+    display: block;
+    width: 45%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    opacity: 0.8;
+  }
+
+  &-rings {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &,
+    *,
+    *:before {
+      transform-style: preserve-3d;
+    }
+  }
+
+  &-ring {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: {
+        width: 2px;
+        style: solid;
+        radius: 50%;
+      }
+    }
+
+    @for $i from 0 to $n {
+      $ca: $i * $ba - 90deg;
+      @debug #{length($colors)};
+
+      &:nth-child(#{$i + 1}) {
+        transform: translateZ($r * sin($ca)) scale(cos($ca));
+
+        &:before {
+          animation: ring $t -#{$i / $n * $t} linear infinite;
+          border-color: nth($colors, -$i - 1)
+            transparent
+            transparent
+            transparent;
+        }
+      }
+    }
+  }
+}
+
+@keyframes ring {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

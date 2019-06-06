@@ -2,4 +2,17 @@
 
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    -45deg,
+    #090008 0%,
+    #01001a 50%,
+    #090008 100%
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: 7;
 }
