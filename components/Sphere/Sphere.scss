@@ -3,7 +3,7 @@
 @import '../../styles/mixins';
 
 $n: 16;
-$r: 55vw;
+$r: 48vw;
 $t: 5s;
 $ba: 180deg / $n;
 $colors: #05c2de #09bede #12b6dd #19afdc #24a4db #3892da #4286d9 #4e7cd9 #5b6ed8
@@ -21,7 +21,7 @@ $angle: 13deg;
   transition: transform 0.8s;
 
   &.small {
-    transform: scale(0.25) translateY(-255vw);
+    transform: scale(0.6) translateY(-60%);
   }
 
   &-titleImage {

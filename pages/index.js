@@ -46,11 +46,11 @@ export default function App() {
       onTouchMove={preventWeChatBrowserDefault}
     >
       <Sphere size={page === 0 ? 'large' : 'small'} />
-      {page ? (
+      {page === 1 ? (
         <Detail />
       ) : (
         <div className="next">
-          <p>滑动查看您的邀请</p>
+          <div>滑动查看您的邀请</div>
           <img src="/static/down.svg" />
         </div>
       )}

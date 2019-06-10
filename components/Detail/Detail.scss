@@ -1,49 +1,64 @@
 .Detail {
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 50vw;
-  padding: 40vw 4vw 0;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 30px;
   animation: fadeIn 0.5s linear;
   animation-fill-mode: both;
-  &-block {
-    margin-top: 4vw;
-    color: #fff;
-    p {
-      margin: 0.5em 0;
-    }
-    // &-title {
+  line-height: 2;
 
-    // }
-  }
-  &-acknowledgement {
-    margin: 16vw 0 4vw;
-    color: #ccc;
-    text-align: center;
+  &-title {
     font-size: 12px;
   }
-  &-organizer {
-    margin: 8vw 0 4vw;
-    color: #ccc;
-    text-align: center;
+
+  &-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 32px;
+  }
+
+  &-divider {
+    width: 60px;
+    height: 2px;
+    background-image: linear-gradient(to right, #3ae9f0, #6169d8);
+    margin: 20px auto;
+  }
+
+  &-address {
+    margin-top: 20px;
     font-size: 12px;
   }
+
   &-images {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vw;
+
     img {
-      height: 4vw;
-      margin-left: 2vw;
-      &:first-child {
-        margin-left: 0;
-      }
+      height: 12px;
     }
-    &.organizer {
-      img {
-        height: 6vw;
-      }
+
+    &Divider {
+      margin: 0 5px;
+      color: #666666;
+      line-height: 0;
+    }
+  }
+
+  &-extra {
+    display: flex;
+    margin-top: 40px;
+
+    &Content {
+      flex: 1;
+    }
+
+    &Title {
+      font-size: 12px;
+      margin: 10px 0;
     }
   }
 }
