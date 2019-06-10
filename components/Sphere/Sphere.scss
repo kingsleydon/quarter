@@ -9,6 +9,7 @@ $ba: 180deg / $n;
 $colors: #05c2de #09bede #12b6dd #19afdc #24a4db #3892da #4286d9 #4e7cd9 #5b6ed8
   #6169d8 #705ad6 #7952d6 #8348d5 #8e3ed4 #9536d3 #9a32d4;
 $angle: 13deg;
+
 .Sphere {
   position: fixed;
   width: $r * 2;
@@ -17,7 +18,7 @@ $angle: 13deg;
   left: 50%;
   margin-top: -$r;
   margin-left: -$r;
-  transition: 0.8s;
+  transition: transform 0.8s;
 
   &.small {
     transform: scale(0.25) translateY(-255vw);

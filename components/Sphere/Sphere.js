@@ -1,9 +1,9 @@
 import React from 'react'
 import './Sphere.scss'
 
-export default function Sphere(props) {
+export default function Sphere({size}) {
   return (
-    <div className={`Sphere ${props.pageState ? 'small' : 'large'}`}>
+    <div className={`Sphere ${size}`}>
       <img src="/static/title.png" className="Sphere-titleImage" />
       <div className="Sphere-rings">
         {Array(16)
