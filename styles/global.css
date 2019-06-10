@@ -13,3 +13,11 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+#__next {
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+}

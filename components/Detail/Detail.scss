@@ -1,0 +1,62 @@
+// SEE: https://codepen.io/lukerichardville/pen/zjqfl
+
+@import '../../styles/mixins';
+
+.Detail {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50vw;
+  padding: 40vw 4vw 0;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+  &-block {
+    margin-top: 4vw;
+    color: #fff;
+    p {
+      margin: 0.5em 0;
+    }
+    // &-title {
+
+    // }
+  }
+  &-acknowledgement {
+    margin: 16vw 0 4vw;
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
+  }
+  &-organizer {
+    margin: 8vw 0 4vw;
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
+  }
+  &-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    img {
+      height: 4vw;
+      margin-left: 2vw;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &.organizer {
+      img {
+        height: 6vw;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

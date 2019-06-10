@@ -17,6 +17,11 @@ $angle: 13deg;
   left: 50%;
   margin-top: -$r;
   margin-left: -$r;
+  transition: 0.8s;
+
+  &.small {
+    transform: scale(0.25) translateY(-255vw);
+  }
 
   &-titleImage {
     display: block;
