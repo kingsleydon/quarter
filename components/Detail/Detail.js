@@ -8,7 +8,7 @@ export default function Sphere() {
       <div className="Detail-title">
         2015 中国传媒大学
         <br />
-        数字媒体艺术（网络媒体设计）专业
+        数字媒体艺术（网络媒体设计方向）专业
       </div>
       <div className="Detail-subtitle">毕业设计展</div>
       <div className="Detail-divider" />
@@ -30,6 +30,8 @@ export default function Sphere() {
             <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/iqiyi.png" />
             <span className="Detail-imagesDivider">|</span>
             <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/oppo.png" />
+            <span className="Detail-imagesDivider">|</span>
+            <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/oppo-campus.png" />
           </div>
         </div>
         <div className="Detail-extraContent">
