@@ -32,6 +32,8 @@ export default function Sphere() {
             <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/oppo.png" />
             <span className="Detail-imagesDivider">|</span>
             <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/oppo-campus.png" />
+            <span className="Detail-imagesDivider">|</span>
+            <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/gvr.png" />
           </div>
         </div>
         <div className="Detail-extraContent">
