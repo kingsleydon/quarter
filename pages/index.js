@@ -4,10 +4,8 @@ import Detail from '../components/Detail'
 import './index.scss'
 
 function preventWeChatBrowserDefault(e) {
-  if (e.cancelable) {
-    if (!e.defaultPrevented) {
-      e.preventDefault()
-    }
+  if (e.cancelable && !e.defaultPrevented) {
+    e.preventDefault()
   }
 }
 

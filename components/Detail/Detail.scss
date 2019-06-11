@@ -42,11 +42,9 @@
     margin-top: 20px;
     font-size: 12px;
     a {
-      color: #ccc;
-      text-decoration: underline #ccc;
-      &:active {
-        color: #ccc;
-      }
+      text-decoration: none;
+      color: inherit;
+      border-bottom: 1px solid #666666;
     }
   }
 
