@@ -9,6 +9,12 @@
   animation-fill-mode: both;
   line-height: 2;
 
+  &-invite {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 6px;
+  }
+
   &-title {
     font-size: 12px;
   }
@@ -30,6 +36,18 @@
   &-address {
     margin-top: 20px;
     font-size: 12px;
+  }
+
+  &-contact {
+    margin-top: 20px;
+    font-size: 12px;
+    a {
+      color: #ccc;
+      text-decoration: underline #ccc;
+      &:active {
+        color: #ccc;
+      }
+    }
   }
 
   &-images {

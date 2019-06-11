@@ -4,8 +4,11 @@ import './Detail.scss'
 export default function Sphere() {
   return (
     <div className="Detail">
+      <div className="Detail-invite">
+        邀请函
+      </div>
       <div className="Detail-title">
-        2015
+        2015 中国传媒大学
         <br />
         数字媒体艺术（网络媒体设计）专业
       </div>
@@ -14,7 +17,11 @@ export default function Sphere() {
       <div className="Detail-address">
         2019.06.15 - 06.18
         <br />
-        中国广告博物馆一层
+        中国传媒大学 中国广告博物馆一层
+      </div>
+      <div className="Detail-contact">
+        联系我们：
+        <a href="tel:18810739125">18810739125</a>
       </div>
 
       <div className="Detail-extra">
