@@ -116,7 +116,7 @@ function Sphere() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/bilibili.png",
+    src: "static/bilibili.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
@@ -130,7 +130,7 @@ function Sphere() {
     },
     __self: this
   }, "|"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/oppo.png",
+    src: "static/oppo.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
@@ -158,7 +158,7 @@ function Sphere() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/organizer.png",
+    src: "static/organizer.png",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
@@ -212,7 +212,7 @@ function Sphere(_ref) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "/static/title.png",
+    src: "static/title.png",
     className: "Sphere-titleImage",
     __source: {
       fileName: _jsxFileName,
@@ -1726,7 +1726,7 @@ function App() {
     },
     __self: this
   }, "\u6ED1\u52A8\u67E5\u770B\u60A8\u7684\u9080\u8BF7"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: "/static/down.svg",
+    src: "static/down.svg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
