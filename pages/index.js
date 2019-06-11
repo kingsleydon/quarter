@@ -49,7 +49,7 @@ export default function App() {
       ) : (
         <div className="next">
           <div>滑动查看您的邀请</div>
-          <img src="static/down.svg" />
+          <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/down.svg" />
         </div>
       )}
     </div>

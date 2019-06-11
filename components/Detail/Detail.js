@@ -19,24 +19,23 @@ export default function Sphere() {
       </div>
       <div className="Detail-contact">
         联系我们：
-        <a className="Detail-tel" href="tel:18810739125">
-          18810739125
-        </a>
+        <a href="tel:15001238559">15001238559</a>
+        <a href="tel:17610223270">17610223270</a>
       </div>
 
       <div className="Detail-extra">
         <div className="Detail-extraContent">
           <div className="Detail-extraTitle">特别鸣谢</div>
           <div className="Detail-images sponsors">
-            <img src="static/bilibili.png" />
+            <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/iqiyi.png" />
             <span className="Detail-imagesDivider">|</span>
-            <img src="static/oppo.png" />
+            <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/oppo.png" />
           </div>
         </div>
         <div className="Detail-extraContent">
           <div className="Detail-extraTitle">主办单位</div>
           <div className="Detail-images organizer">
-            <img src="static/organizer.png" />
+            <img src="https://audio-tuna.oss-cn-beijing.aliyuncs.com/digitalart/organizer.png" />
           </div>
         </div>
       </div>
