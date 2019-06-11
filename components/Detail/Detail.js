@@ -28,15 +28,15 @@ export default function Sphere() {
         <div className="Detail-extraContent">
           <div className="Detail-extraTitle">特别鸣谢</div>
           <div className="Detail-images sponsors">
-            <img src="/static/bilibili.png" />
+            <img src="static/bilibili.png" />
             <span className="Detail-imagesDivider">|</span>
-            <img src="/static/oppo.png" />
+            <img src="static/oppo.png" />
           </div>
         </div>
         <div className="Detail-extraContent">
           <div className="Detail-extraTitle">主办单位</div>
           <div className="Detail-images organizer">
-            <img src="/static/organizer.png" />
+            <img src="static/organizer.png" />
           </div>
         </div>
       </div>

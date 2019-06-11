@@ -11,8 +11,7 @@
     "start": "next start",
     "export": "next export",
     "lint:fix": "eslint . --fix --ignore-path .gitignore",
-    "new": "node new.js",
-    "new:page": "TYPE=page node new.js"
+    "deploy": "next build && next export && touch out/.nojekyll && git add out && git commit -m 'chore: deploy' --no-verify && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
@@ -42,6 +41,7 @@
     "postcss-normalize": "^7.0.1",
     "postcss-preset-env": "^6.6.0",
     "prettier": "^1.16.4",
+    "webpack": "^4.33.0",
     "webpack-merge": "^4.2.1"
   },
   "husky": {
