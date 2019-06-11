@@ -5,7 +5,6 @@ const webpackConfig = require('./webpack.config')
 
 module.exports = withCss(
   withSass({
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/quarter' : '',
     webpack: config => {
       // add polyfill
       const originalEntry = config.entry
