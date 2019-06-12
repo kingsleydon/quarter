@@ -20,6 +20,10 @@ body {
   );
   background-repeat: no-repeat;
   overflow: hidden;
+
+  & > a {
+    display: none;
+  }
 }
 
 #__next {

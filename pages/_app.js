@@ -16,6 +16,10 @@ export default class NextApp extends App {
           />
           <meta name="full-screen" content="yes" />
           <meta name="browsermode" content="application" />
+          <script
+            type="text/javascript"
+            src="https://s23.cnzz.com/z_stat.php?id=1277704529&web_id=1277704529"
+          />
         </Head>
         <Component />
       </Container>
