@@ -9,7 +9,7 @@ export default class NextApp extends App {
     return (
       <Container>
         <Head>
-          <title>一刻</title>
+          <title>数媒网络毕业展邀请函</title>
           <meta
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
             name="viewport"
