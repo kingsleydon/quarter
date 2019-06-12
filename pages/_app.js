@@ -20,6 +20,7 @@ export default class NextApp extends App {
             type="text/javascript"
             src="https://s23.cnzz.com/z_stat.php?id=1277704529&web_id=1277704529"
           />
+          <style>{'body > a {display: none}'}</style>
         </Head>
         <Component />
       </Container>
